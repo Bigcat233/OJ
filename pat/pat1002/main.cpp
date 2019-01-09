@@ -1,28 +1,35 @@
 #include <iostream>
-
+#include <stdio.h>
+#include <algorithm>
 using namespace std;
 
 int main()
 {
     int n;
-    int result1,result2,resulut3,reslut5;
+    int result0=0,result1=0;
+    float result3=0.0;
     cin>>n;
-    int digital[n],A1[n],A2[n],A3[n],A4[n],A0[n];
+    int flag=1;
+    long long int digital[n],A1[n],A3[n],A4[n],A0[n];
     int a1=0;
     int a2=0;
     int a3=0;
     int a4=0;
     int a0=0;
     for(int i=0;i<n;i++){
+        cin>>digital[i];
+    }
+    for(int i=0;i<n;i++){
         switch(digital[i]%5){
         case 0:
-            A0[a0]=digital[i];
-            a0++;break;
+            if(!digital[i]%2){
+                A0[a0]=digital[i];
+                a0++;break;}
+            break;
         case 1:
             A1[a1]=digital[i];
             a1++;break;
         case 2:
-            A2[a2]=digital[i];
             a2++;break;
         case 3:
             A3[a3]=digital[i];
@@ -33,8 +40,56 @@ int main()
         default:break;
         }
     }
-    for(int i =0;i<a0;i++){
+    if(a0==0){
+        cout<<"N ";
+    }
+    else{
+        for(int i=0;i<a0;i++){
+            result0+=A0[i];
+        }
+        cout<<result0<<" ";
+    }
+
+
+
+    if(a1==0){
+        cout<<"N ";
+    }
+    else{
+        for(int i=0;i<a1;i++){
+            result1+=flag*A1[i];
+            flag=-1*flag;
+        }
+        cout<<result1<<" ";
+    }
+
+
+
+    if(a2==0){
+        cout<<"N ";
+    }
+    else{
+        cout<<a2<<" ";
+        }
+
+
+    if(a3==0){
+        cout<<"N ";
+    }
+    else{
+        for(int i=0;i<a0;i++){
+            result3+=A3[i];
+        }
+        float format = result3/a3;
+        printf("%.1f ",format);
 
     }
 
+    if(a4==0){
+        cout<<"N "<<endl;
+    }
+    else{
+        cout<<*max_element(A4,A4+a4)<<endl;
+        }
+    return 0;
 }

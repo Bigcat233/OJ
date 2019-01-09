@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1547022894 source:c:\users\jn079\documents\codeblocks\oj\oj\pat\pat1002\main.cpp
+	<iostream>
+	<stdio.h>
+	<algorithm>
+
