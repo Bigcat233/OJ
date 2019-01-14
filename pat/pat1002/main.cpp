@@ -1,12 +1,12 @@
 #include <iostream>
-#include <stdio.h>
+#include <iomanip>
 #include <algorithm>
 using namespace std;
 
 int main()
 {
     int n;
-    int result0=0,result1=0;
+    long long int result0=0,result1=0;
     float result3=0.0;
     cin>>n;
     int flag=1;
@@ -81,12 +81,11 @@ int main()
             result3+=A3[i];
         }
         float format = result3/a3;
-        printf("%.1f ",format);
-
+        cout<<fixed<<setprecision(1)<<format<<" ";
     }
 
     if(a4==0){
-        cout<<"N "<<endl;
+        cout<<"N"<<endl;
     }
     else{
         cout<<*max_element(A4,A4+a4)<<endl;
