@@ -18,12 +18,13 @@ int main()
     int a0=0;
     for(int i=0;i<n;i++){
         cin>>digital[i];
+        cout<<digital[i]<<"A0"<<endl;
     }
     for(int i=0;i<n;i++){
         switch(digital[i]%5){
         case 0:
             if(!digital[i]%2){
-                A0[a0]=digital[i];
+                A0[a0]=digital[i];cout<<digital[i]<<"A0"<<endl;
                 a0++;break;}
             break;
         case 1:
@@ -93,3 +94,5 @@ int main()
         }
     return 0;
 }
+//10 348 344 986 351 131 514 50 162 126 768
+//50 640 1 558.0 514
