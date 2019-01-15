@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1547551340 source:c:\users\jn079\documents\codeblocks\oj\oj\pat\pat1002\main.cpp
+=======
+1547022951 source:c:\users\jn079\documents\codeblocks\oj\oj\pat\pat1002\main.cpp
+>>>>>>> 2065ef6a16aa10c02f1b113d109d073147b45886
 	<iostream>
 	<stdio.h>
 	<algorithm>
