@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>
+#include <stdio.h>
 #include <algorithm>
 using namespace std;
 
@@ -18,13 +18,15 @@ int main()
     int a0=0;
     for(int i=0;i<n;i++){
         cin>>digital[i];
-        cout<<digital[i]<<"A0"<<endl;
+        //cout<<digital[i]<<"A0"<<endl;
     }
     for(int i=0;i<n;i++){
         switch(digital[i]%5){
         case 0:
-            if(!digital[i]%2){
-                A0[a0]=digital[i];cout<<digital[i]<<"A0"<<endl;
+
+            if(!(digital[i]%2)){
+                //cout<<"here"<<endl;
+                A0[a0]=digital[i];
                 a0++;break;}
             break;
         case 1:
@@ -43,6 +45,8 @@ int main()
     }
     if(a0==0){
         cout<<"N ";
+//10 348 344 986 351 131 514 50 162 126 768
+//50 640 1 558.0 514
     }
     else{
         for(int i=0;i<a0;i++){
@@ -78,11 +82,11 @@ int main()
         cout<<"N ";
     }
     else{
-        for(int i=0;i<a0;i++){
+        for(int i=0;i<a3;i++){
             result3+=A3[i];
         }
         float format = result3/a3;
-        cout<<fixed<<setprecision(1)<<format<<" ";
+        printf("%.1f ",format);
     }
 
     if(a4==0){
@@ -91,6 +95,9 @@ int main()
     else{
         cout<<*max_element(A4,A4+a4)<<endl;
         }
+    //system("pause");
+    //cin.get();
+    //getchar();
     return 0;
 }
 //10 348 344 986 351 131 514 50 162 126 768
