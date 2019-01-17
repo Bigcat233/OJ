@@ -1,0 +1,2 @@
+1.codeblocks中cin.get()不起作用，getchar（）也直接忽视，只有include<stdio.h> system("pause")才会暂停
+2.codeblocks中f9直接编译运行无法进行标准输入 但f8debug后再f9可以标准输入
