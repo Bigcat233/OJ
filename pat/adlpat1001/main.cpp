@@ -1,7 +1,7 @@
 #include <iostream>
-
+#include <vector> // TO DO:learn vector
 using namespace std;
-void dfs();
+void dfs(int start,int index,int end);
 
 int main()
 {
@@ -10,7 +10,7 @@ int main()
 }
 
 
-void dfs(){
+void dfs(int start,int index,int end){
 
 
 }
