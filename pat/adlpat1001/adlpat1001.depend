@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1548168526 source:c:\users\jn079\documents\codeblocks\oj\oj\pat\adlpat1001\main.cpp
+	<iostream>
+	<sstream>
+
