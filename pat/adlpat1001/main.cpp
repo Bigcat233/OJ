@@ -17,8 +17,13 @@ int main()
             cout<<'-';
             p++;
             length--;}
-    for(p;p<=(length%3);p++){
+    /*for(p;p<=(length%3);p++){
         cout<<c[p];
+    }*/
+    for(int i=0;i<(length%3);i++){
+        cout<<c[p];
+        p++;
+        if(i==(length%3)-1) cout<<',';
     }
     for(p;p<=length;p++){
         if(count_num==3){
