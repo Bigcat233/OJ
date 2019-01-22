@@ -5,7 +5,7 @@ void dfs(int start,int index,int end);
 
 int main()
 {
-    cout << "Hello world!" << endl;
+
     return 0;
 }
 
