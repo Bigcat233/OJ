@@ -3,12 +3,26 @@
 #include <algorithm>
 
 using namespace std;
-
+struct FACTOR{
+    int exponents;
+    double coefficients;
+    void show(){
+        cout<<coefficients<<endl;
+    }
+};
+vector<FACTOR> a;
+vector<FACTOR> b;
+FACTOR temp1;
+FACTOR temp2;
+int count_num;
 int main()
 {
-    vector<double> a(1001,0);
-    vector<double> b(1001,0);//下标记为指数 数值记为对应数值
 
 
     return 0;
+}
+
+void input(){
+
+
 }
